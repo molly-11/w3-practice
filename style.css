@@ -1,103 +1,57 @@
-h2 {
-  font-size: 30px;
-  color: green;
+body {
+  font: 1em Tahoma, sans-serif;
+  background-color: #fff;
+  color: #333;
+  max-width: 660px;
+  margin: 0 auto;
 }
-/* class szelektor */
-.blue-text {
-    color: blue;
-}
+.box {
+  padding: 10px;
+  border: 5px solid rgb(17, 105, 121);
+  background-color: rgb(1, 19, 121, 0.1);
+  border-radius: 5px;
+  width: 200px;
+  
+  /*height: 400px;*/
 
-#main-heading {
-    font-size: 84px;
-}
+  position: absolute;
+  left: 30px;
+  top:30px;
 
-/* Kombinalt szelektor */
-/* Ebben a példában a "p" elemet választjuk ki, amelynek az osztálya "blue-text", és a szöveg színét kék színűre állítjuk. */
-p.blue-text {
-  text-decoration: underline;
-}
-/* Ebben a példában az összes "button" osztályú elemre alkalmazzuk a színeket, amelyek az "section" osztályon belül találhatók. */
-section button {
-  background-color: #333;
-  color: #fff;
-}
-/* Az "ul li" szelektor kiválasztja az összes "li" elemet, amelyek egy "ul" elem alatt vannak. */
-ul li {
-  list-style-type: square;
-}
-/* Azokat választja ki amelyek mindkét stílust tartalmazzák */
-.sel1.sel2 {
-background-color: yellow;
-}
 
-/* Ez egy szóközzel elválasztott szelektor, amely az intro osztályú elemeket keresi a p elemek belső tartalmában. */
-p .intro {
-  color: red;
-}
-/* Csak a közvetlen leszármozottját jelöki ki */
-.parent > .child {
-/*   background-color: green; */
-}
-/* Minden child nevű osztály elemet kiválaszt */
-.parent .child {
-/* background-color: green; */
-}
-/* Közvetlen testvér szelektor */
-div + p {
-  background-color: yellow;
-}
-
-/* Általános testvér szelektor */
-/* div ~ p {
-  background-color: orange;
-} */
-
-/* PSEUDO CLASS */
-/* unvisited link */
-a:link {
-  color: blue;
-}
-
-/* visited link */
-a:visited {
-  color: purple;
-}
-
-/* mouse over link */
-a:hover {
-  color: white;
-  background-color: black;
-}
-
-/* Selects the second li element in a list */
-li:nth-child(2) {
-  background: lightgreen;
-}
-
-/* li:nth-last-child(2) {
-  background: red;
-} */
-
-/* PSEUDO ELEMENT */
-/* ::before ::after
-https://www.w3schools.com/css/tryit.asp?filename=trycss_before
+/*float: left;
+margin-right: 10px;
 */
-/* p::first-letter {
-  color: green;
-  font-size: xx-large;
-} */
-
- /* ATTRIBUTE SELECTOR  */
-/* https://www.w3schools.com/css/css_attribute_selectors.asp */
-input[type="text"] {
-  width: 150px;
-  display: block;
-  margin-bottom: 10px;
-  background-color: yellow;
 }
 
-input[type="button"] {
-  width: 120px;
-  margin-left: 35px;
-  display: block;
+/*.second{
+clear: left;
+
+}*/
+
+.wrapper{
+  position: relative;
+  border: 1px solid #333;
 }
+
+nav ul{
+ list-style: none;
+ margin: 0;
+ padding: 10px;
+
+}
+
+nav li{
+  display: inline-block;
+  padding: 0 20px;
+  color: #fff;
+
+}
+nav{
+  background-color: #333;
+  width: 100%;
+  margin: 0;
+  position: sticky;
+  top:0;
+}
+
